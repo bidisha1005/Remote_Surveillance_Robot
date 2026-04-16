@@ -4,13 +4,8 @@
 
 ```bash
 git clone https://github.com/bidisha1005/Remote_Surveillance_Robot.git
-cd surveillance_robot_ws
-
-# Install dependencies
-rosdep install --from-paths src --ignore-src -r -y
-
-# Build workspace
-colcon build
+cd ~/Remote_Surveillance_Robot
+colcon build --symlink-install
 
 # Source workspace
 source install/setup.bash
@@ -31,7 +26,8 @@ ros2 launch surveillance_robot_description display.launch.py
 ### 🌍 Gazebo (Simulation)
 
 ```bash
-ros2 launch surveillance_robot_description gazebo.launch.py
+source ~/Remote_Surveillance_Robot/install/setup.bash
+ros2 launch surveillance_robot_description robot_launch.py
 ```
 
 ---
