@@ -1,4 +1,3 @@
-```markdown
 # 🤖 Remote Surveillance Robot (ROS 2 + Gazebo)
 
 ## 📌 Overview
@@ -178,7 +177,5 @@ ros2 run image_tools showimage
 ## 📄 License
 
 This project is for academic and educational purposes.
-
----
 
 ```
