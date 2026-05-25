@@ -30,37 +30,7 @@ The system addresses the limitations of fixed surveillance systems by providing 
 
 ## 🏗️ System Architecture
 
-### 🔹 Control Flow
-```
-
-User Input (Keyboard)
-↓
-teleop_twist_keyboard
-↓
-/cmd_vel topic
-↓
-Gazebo Diff Drive Plugin
-↓
-Robot Movement
-↓
-Odometry (/odom) + TF Broadcast
-
-```
-
-### 📷 Camera Pipeline
-```
-
-Gazebo Rendering
-↓
-Camera Sensor Plugin
-↓
-sensor_msgs/Image
-↓
-/camera/image_raw
-↓
-Visualization (image_tools)
-
-```
+<img width="3456" height="3724" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/163d1251-b940-4568-9bc8-d63c96795a26" />
 
 ---
 
